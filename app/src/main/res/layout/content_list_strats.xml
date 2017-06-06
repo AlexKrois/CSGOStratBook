@@ -9,7 +9,14 @@
     tools:showIn="@layout/activity_list_strats">
 
 
-        <RelativeLayout
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
             android:id="@+id/content"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -22,5 +29,6 @@
 
 
         </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
 
 </android.support.constraint.ConstraintLayout>
